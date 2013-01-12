@@ -83,6 +83,23 @@ static char defaultKey;  // used for runtime property creation
 }
 
 
+// Shrinks the two-dimensional array.
+- (void)shrinkToColumns:(NSUInteger)cols rows:(NSUInteger)rows
+{
+	while (self.numColumns > cols) {
+		[self removeLastObject];
+	}
+	if (rows < self.numRows) {
+		for (NSUInteger i = 0; i < self.numColumns; i++) {
+			NSMutableArray *rowArray = [self objectAtIndex:i];
+			while (rowArray.count > rows) {
+				[rowArray removeLastObject];
+			}
+		}
+	}
+}
+
+
 // Replace object at given index pair with the object provided.
 - (void)setObject:(id)obj column:(NSUInteger)col row:(NSUInteger)row
 {

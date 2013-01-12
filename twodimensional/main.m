@@ -13,6 +13,8 @@ int main(int argc, const char * argv[])
 	    NSLog(@"%@", [m description]);
 		NSMutableArray *t = [m transposed];
 		NSLog(@"%@", [t description]);
+		[m shrinkToColumns:2 rows:2];
+		NSLog(@"%@", [m description]);
 	}
     return 0;
 }
