@@ -1,22 +1,18 @@
-//
-//  main.m
-//  twodimensional
-//
 //  Created by Adriaan Tijsseling on 01/10/13.
-//  Copyright (c) 2013 Adriaan Tijsseling. All rights reserved.
-//
 
 #import <Foundation/Foundation.h>
+#import "NSMutableArray+Twodimensional.h"
 
 int main(int argc, const char * argv[])
 {
-
 	@autoreleasepool {
-	    
-	    // insert code here...
-	    NSLog(@"Hello, World!");
-	    
+	    NSMutableArray *m = [[NSMutableArray alloc] initWithColumns:4 rows:3 type:@"NSNull"];
+	    NSLog(@"%@", [m description]);
+		[m setObject:@"bar" column:2 row:1];
+		[m setObject:@"foo" column:5 row:3];
+	    NSLog(@"%@", [m description]);
+		NSMutableArray *t = [m transposed];
+		NSLog(@"%@", [t description]);
 	}
     return 0;
 }
-
