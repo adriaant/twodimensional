@@ -14,7 +14,7 @@ static char defaultKey;  // used for runtime property creation
 
 // Create a matrix and initialize with instances from the given class name.
 // The class given must respond to new or init, so it cannot be an NSNumber.
-// Of course you could sublcass NSNumber and override the init method.
+// Of course you could subclass NSNumber and override the init method.
 - (id)initWithColumns:(NSUInteger)cols rows:(NSUInteger)rows type:(NSString*)className
 {
 	Class arrayClass = NSClassFromString(className);
@@ -141,7 +141,7 @@ static char defaultKey;  // used for runtime property creation
 }
 
 
-// Formatted description showing all values in a matrix.
+// "Formatted" description showing all values in a matrix.
 -(NSString *)description
 {
 	NSMutableString *m = [[NSMutableString alloc] init];

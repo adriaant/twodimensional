@@ -35,6 +35,7 @@
 		FB5E9D68169F54BE0034B24E /* twodimensional.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = twodimensional.1; sourceTree = "<group>"; };
 		FB5E9D6F169F553E0034B24E /* NSMutableArray+Twodimensional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Twodimensional.h"; sourceTree = "<group>"; };
 		FB5E9D70169F553E0034B24E /* NSMutableArray+Twodimensional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Twodimensional.m"; sourceTree = "<group>"; };
+		FB5E9D7C16A1FC6A0034B24E /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +53,7 @@
 		FB5E9D52169F54BE0034B24E = {
 			isa = PBXGroup;
 			children = (
+				FB5E9D7C16A1FC6A0034B24E /* README */,
 				FB5E9D63169F54BE0034B24E /* twodimensional */,
 				FB5E9D60169F54BE0034B24E /* Frameworks */,
 				FB5E9D5E169F54BE0034B24E /* Products */,
@@ -221,6 +223,7 @@
 		FB5E9D6D169F54BE0034B24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
@@ -238,6 +241,7 @@
 		FB5E9D6E169F54BE0034B24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_WARN_OBJCPP_ARC_ABI = YES;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
@@ -271,6 +275,7 @@
 				FB5E9D6E169F54BE0034B24E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
