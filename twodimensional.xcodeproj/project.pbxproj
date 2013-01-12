@@ -10,6 +10,8 @@
 		FB5E9D62169F54BE0034B24E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB5E9D61169F54BE0034B24E /* Foundation.framework */; };
 		FB5E9D65169F54BE0034B24E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E9D64169F54BE0034B24E /* main.m */; };
 		FB5E9D69169F54BE0034B24E /* twodimensional.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB5E9D68169F54BE0034B24E /* twodimensional.1 */; };
+		FB5E9D71169F642D0034B24E /* NSMutableArray+Twodimensional.m in Sources */ = {isa = PBXBuildFile; fileRef = FB5E9D70169F553E0034B24E /* NSMutableArray+Twodimensional.m */; };
+		FB5E9D73169F643F0034B24E /* NSMutableArray+Twodimensional.h in Headers */ = {isa = PBXBuildFile; fileRef = FB5E9D6F169F553E0034B24E /* NSMutableArray+Twodimensional.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		FB5E9D64169F54BE0034B24E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB5E9D67169F54BE0034B24E /* twodimensional-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "twodimensional-Prefix.pch"; sourceTree = "<group>"; };
 		FB5E9D68169F54BE0034B24E /* twodimensional.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = twodimensional.1; sourceTree = "<group>"; };
+		FB5E9D6F169F553E0034B24E /* NSMutableArray+Twodimensional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Twodimensional.h"; sourceTree = "<group>"; };
+		FB5E9D70169F553E0034B24E /* NSMutableArray+Twodimensional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Twodimensional.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				FB5E9D64169F54BE0034B24E /* main.m */,
-				FB5E9D68169F54BE0034B24E /* twodimensional.1 */,
+				FB5E9D6F169F553E0034B24E /* NSMutableArray+Twodimensional.h */,
+				FB5E9D70169F553E0034B24E /* NSMutableArray+Twodimensional.m */,
 				FB5E9D66169F54BE0034B24E /* Supporting Files */,
+				FB5E9D68169F54BE0034B24E /* twodimensional.1 */,
 			);
 			path = twodimensional;
 			sourceTree = "<group>";
@@ -90,6 +96,17 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		FB5E9D72169F64340034B24E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB5E9D73169F643F0034B24E /* NSMutableArray+Twodimensional.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		FB5E9D5C169F54BE0034B24E /* twodimensional */ = {
 			isa = PBXNativeTarget;
@@ -98,6 +115,7 @@
 				FB5E9D59169F54BE0034B24E /* Sources */,
 				FB5E9D5A169F54BE0034B24E /* Frameworks */,
 				FB5E9D5B169F54BE0034B24E /* CopyFiles */,
+				FB5E9D72169F64340034B24E /* Headers */,
 			);
 			buildRules = (
 			);
@@ -139,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5E9D71169F642D0034B24E /* NSMutableArray+Twodimensional.m in Sources */,
 				FB5E9D65169F54BE0034B24E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,8 +221,16 @@
 		FB5E9D6D169F54BE0034B24E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "twodimensional/twodimensional-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -211,8 +238,16 @@
 		FB5E9D6E169F54BE0034B24E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_OBJCPP_ARC_ABI = YES;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = YES;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "twodimensional/twodimensional-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_SHADOW = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
